@@ -42,6 +42,7 @@ body {
      font-size: 0.87rem;
      font-weight: 400;
      margin: 0;
+     line-height: 22px;
 }
 
 /* Header styles start */
@@ -375,15 +376,18 @@ select {
      margin: 0 auto;
      margin-top: 100px;
 }
-.meet-intro{
+
+.meet-intro {
      max-width: 800px;
      margin: 0 auto;
      text-align: center;
 }
-.meet-title{
+
+.meet-title {
      margin: 0;
      margin-bottom: 20px;
 }
+
 .meet-image-container {
      border-radius: 18px;
      background: rgba(255, 255, 255, 0.1);
@@ -393,24 +397,27 @@ select {
      margin-top: 50px;
      padding: 20px;
 }
-.image-1-title,  
-.image-2-title, 
-.image-3-title, 
-.image-4-title, 
+
+.image-1-title,
+.image-2-title,
+.image-3-title,
+.image-4-title,
 .image-5-title,
-.image-6-title{
+.image-6-title {
      position: absolute;
      bottom: 35px;
 }
+
 .image-1-span,
 .image-2-span,
 .image-3-span,
 .image-4-span,
 .image-5-span,
-.image-6-span{
+.image-6-span {
      position: absolute;
      bottom: 15px;
 }
+
 .image-1-content {
      background-image: url(../images/trainer1.png);
 }
@@ -434,12 +441,13 @@ select {
 .image-6-content {
      background-image: url(../images/trainer6.png);
 }
+
 .image-1-content,
 .image-2-content,
 .image-3-content,
 .image-4-content,
 .image-5-content,
-.image-6-content{
+.image-6-content {
      background-repeat: no-repeat;
      background-position: center;
      background-size: cover;
@@ -447,4 +455,68 @@ select {
      border-radius: 18px;
      position: relative;
      padding-left: 20px;
+}
+
+/* footer styles */
+footer {
+     margin-top: 90px;
+     background: rgba(255, 255, 255, 0.1);
+     padding-bottom: 10px;
+}
+.footer-container{
+     max-width: 1250px;
+     margin: 0 auto;
+}
+.footer-content{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     gap: 150px;
+}
+.footer-title {
+     color: rgb(230, 83, 60);
+     font-size: 4.37rem;
+     font-weight: 800;
+     margin-bottom: 25px;
+}
+.footer-menu{
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     gap: 120px;
+}
+/* .footer-menu-1{
+     display: flex;
+} */
+.footer-menu-1-title {
+     color: rgb(255, 255, 255);
+     font-size: 2rem;
+     font-weight: 700;
+     margin-bottom: 40px;
+}
+
+footer ul {
+     list-style: none;
+     padding: 0;
+}
+footer li{
+     margin-bottom: 20px;
+}
+footer li a {
+     text-decoration: none;
+     color: rgba(255, 255, 255, 0.5);
+     font-size: 1.37rem;
+     font-weight: 400;
+     margin-left: 0px;
+}
+
+footer hr {
+     max-width: 1250px;
+     margin: 70px auto 35px;
+     border: 1px solid rgba(255, 255, 255, 0.1); 
+}
+
+.footer-finish p {
+     color: rgba(255, 255, 255, 0.5);
+     font-size: 1.12rem;
+     font-weight: 400;
+     text-align: center;
 }
