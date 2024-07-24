@@ -30,6 +30,13 @@ body {
      font-weight: 900;
 }
 
+.h5-style {
+     color: rgb(255, 255, 255);
+     font-size: 1.75rem;
+     font-weight: 900;
+     margin-bottom: 0px;
+}
+
 .h6-title {
      color: rgb(255, 255, 255);
      font-size: 1.12rem;
@@ -309,14 +316,6 @@ header {
      gap: 30px;
 }
 
-.chart-title,
-.calculate-bmi-title {
-     color: rgb(255, 255, 255);
-     font-size: 1.75rem;
-     font-weight: 900;
-     margin-bottom: 0px;
-}
-
 th,
 td {
      border: 1px solid rgba(255, 255, 255, 0.1);
@@ -370,6 +369,68 @@ select {
      font-weight: 400;
 }
 
+/* Our facilities styles */
+.facilities-section {
+     margin-top: 100px;
+     max-width: 1250px;
+     margin: 90px auto 0px;
+}
+.facilities-intro{
+     max-width: 800px;
+     margin: 0 auto;
+     text-align: center;
+}
+.facilities-title {
+     margin: 0px;
+     margin-bottom: 20px;
+}
+
+.facilities-content {
+     border-radius: 20px;
+     background: rgb(34, 34, 34);
+     padding: 20px;
+}
+.facilities-content img{
+     width: 100%;
+     border-radius: 15px;
+     margin-bottom: 15px;
+     min-height: 250px;
+}
+.facilities-content h5{
+     margin: 10px 0px 20px;
+     font-size: 1.25rem;
+     color: rgb(255, 255, 255);
+     font-weight: 600;
+     text-align: center;
+}
+.fitness-content-description{
+     background: rgb(50, 50, 50);
+     border-radius: 15px;
+     padding: 10px;
+}
+.fitness-content-description button{
+     border-radius: 10px;
+     border: none;
+     background: rgb(34, 34, 34);
+     color: rgba(255, 255, 255, 0.7);
+     font-size: 0.87rem;
+     padding: 8px 20px;
+     cursor: pointer;
+     margin-top: 15px;
+     text-align: right;
+}
+.fitness-content-description button:hover {
+     background: rgb(230, 83, 60);
+     color: rgb(255, 255, 255);
+     font-weight: 600;
+}
+
+.facilities-container{
+     margin-top: 60px;
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 25px;
+}
 /* Meet our team section styles */
 .meet-section {
      max-width: 1250px;
@@ -463,26 +524,31 @@ footer {
      background: rgba(255, 255, 255, 0.1);
      padding-bottom: 10px;
 }
-.footer-container{
+
+.footer-container {
      max-width: 1250px;
      margin: 0 auto;
 }
-.footer-content{
+
+.footer-content {
      display: grid;
      grid-template-columns: 1fr 1fr;
      gap: 150px;
 }
+
 .footer-title {
      color: rgb(230, 83, 60);
      font-size: 4.37rem;
      font-weight: 800;
      margin-bottom: 25px;
 }
-.footer-menu{
+
+.footer-menu {
      display: grid;
      grid-template-columns: repeat(2, 1fr);
      gap: 120px;
 }
+
 /* .footer-menu-1{
      display: flex;
 } */
@@ -497,9 +563,11 @@ footer ul {
      list-style: none;
      padding: 0;
 }
-footer li{
+
+footer li {
      margin-bottom: 20px;
 }
+
 footer li a {
      text-decoration: none;
      color: rgba(255, 255, 255, 0.5);
@@ -511,7 +579,7 @@ footer li a {
 footer hr {
      max-width: 1250px;
      margin: 70px auto 35px;
-     border: 1px solid rgba(255, 255, 255, 0.1); 
+     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .footer-finish p {
