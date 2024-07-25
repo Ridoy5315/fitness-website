@@ -103,6 +103,10 @@ header {
      margin: 2px;
 }
 
+.navigation i {
+     display: none;
+}
+
 /* Banner styles */
 .banner-container {
      display: grid;
@@ -123,12 +127,9 @@ header {
 .banner-title-part2,
 .banner-title-part3 {
      color: rgb(255, 255, 255);
-     font-family: Inter;
      font-size: 4.87rem;
      font-weight: 900;
      line-height: 120%;
-     letter-spacing: 0%;
-     text-align: left;
      margin: 0px;
 }
 
@@ -151,6 +152,10 @@ header {
      margin-left: 10px;
 }
 
+.banner-image-card {
+     position: relative;
+}
+
 .banner-card-two,
 .banner-card-one-container {
      border: 1px solid rgba(255, 255, 255, 0.1);
@@ -169,8 +174,8 @@ header {
      align-items: center;
      gap: 10px;
      padding: 10px 12px;
-     top: 580px;
-     left: 860px;
+     top: 435px;
+     right: 340px;
      position: absolute;
 }
 
@@ -204,8 +209,8 @@ header {
 .banner-card-two {
      padding: 10px 18px;
      position: absolute;
-     top: 280px;
-     left: 1180px;
+     top: 145px;
+     left: 240px;
 }
 
 .banner-card-two-500 {
@@ -225,7 +230,9 @@ header {
 .change-container-title {
      flex-direction: column;
      text-align: center;
-     margin: 0 320px 60px;
+     max-width: 600px;
+     margin: 0 auto;
+     margin-bottom: 60px;
      gap: 15px;
 }
 
@@ -292,106 +299,132 @@ header {
      max-width: 100%;
      border-radius: 18px;
 }
+
 /* Training and Exercise section styles */
-.training{
+.training {
      max-width: 1250px;
      margin: 0 auto;
 }
-.training-intro{
+
+.training-intro {
      margin-top: 90px;
      max-width: 800px;
      margin-bottom: 50px;
 }
-.training-title{
+
+.training-title {
      margin: 0;
      margin-bottom: 20px;
 }
-.training-content-1{
+
+.training-content-1 {
      background-image: url(../images/exercise1.jpg);
      position: relative;
 }
-.training-content-1-overlay{
+
+.training-content-1-overlay {
      background-color: rgba(6, 255, 210, 0.5);
      height: 100%;
 }
+
 .training-content-1-title,
 .training-content-5-title,
-.training-content-6-title{
+.training-content-6-title {
      size: 1rem;
      position: absolute;
      top: 200px;
      left: 20px;
 }
-.training-content-2{
+
+.training-content-2 {
      background-image: url(../images/exercise2.png);
 }
-.training-content-2-overlay{
+
+.training-content-2-overlay {
      background-color: rgba(255, 0, 0, 0.3);
      height: 100%;
 }
-.training-content-2-title{
+
+.training-content-2-title {
      size: 1rem;
      position: absolute;
      top: 30px;
      left: 30px;
 }
-.training-content-3{
+
+.training-content-3 {
      background-image: url(../images/exercise3.png);
 }
+
 .training-content-3-overlay,
-.training-content-3-overlay{
+.training-content-4-overlay {
      background-color: rgba(0, 0, 0, 0.5);
      height: 100%;
 }
-.training-content-3-title{
+
+.training-content-3-title {
      size: 1rem;
      position: absolute;
      top: 180px;
      left: 20px;
 }
-.training-content-4{
+
+.training-content-4 {
      background-image: url(../images/exercise4.png);
 }
-.training-content-4-title{
+
+.training-content-4-title {
      size: 1rem;
      position: absolute;
      top: 30px;
      left: 310px;
 }
-.training-content-5{
+
+.training-content-5 {
      background-image: url(../images/exercise5.jpg);
 }
-.training-content-5-overlay{
+
+.training-content-5-overlay {
      background-color: rgba(66, 255, 0, 0.3);
      height: 100%;
 }
-.training-content-6{
+
+.training-content-6 {
      background-image: url(../images/exercise6.jpg);
 }
-.training-content-6-overlay{
+
+.training-content-6-overlay {
      background-color: rgba(0, 71, 255, 0.3);
      height: 100%;
 }
+
 .training-content-1,
 .training-content-2,
 .training-content-3,
 .training-content-4,
 .training-content-5,
-.training-content-6{
+.training-content-6 {
      background-repeat: no-repeat;
      background-position: center;
      background-size: cover;
      height: 250px;
      position: relative;
 }
-.training-row-1{
+
+.training-row-1 {
      display: grid;
-     grid-template-columns: 0.7fr 1.4fr 0.7fr ;
+     grid-template-columns: 0.7fr 1.4fr 0.7fr;
 }
-.training-row-2{
+
+.training-row-2 {
      display: grid;
-     grid-template-columns: 0.8fr 0.6fr 0.6fr ;
+     grid-template-columns: 0.8fr 0.6fr 0.6fr;
 }
+
+.training-row-3 {
+     display: none;
+}
+
 /* BMI Calculator section styles */
 .calculator-intro {
      max-width: 600px;
@@ -474,11 +507,13 @@ select {
      max-width: 1250px;
      margin: 90px auto 0px;
 }
-.facilities-intro{
+
+.facilities-intro {
      max-width: 800px;
      margin: 0 auto;
      text-align: center;
 }
+
 .facilities-title {
      margin: 0px;
      margin-bottom: 20px;
@@ -489,25 +524,29 @@ select {
      background: rgb(34, 34, 34);
      padding: 20px;
 }
-.facilities-content img{
+
+.facilities-content img {
      width: 100%;
      border-radius: 15px;
      margin-bottom: 15px;
      min-height: 250px;
 }
-.facilities-content h5{
+
+.facilities-content h5 {
      margin: 10px 0px 20px;
      font-size: 1.25rem;
      color: rgb(255, 255, 255);
      font-weight: 600;
      text-align: center;
 }
-.fitness-content-description{
+
+.fitness-content-description {
      background: rgb(50, 50, 50);
      border-radius: 15px;
      padding: 10px;
 }
-.fitness-content-description button{
+
+.fitness-content-description button {
      border-radius: 10px;
      border: none;
      background: rgb(34, 34, 34);
@@ -518,18 +557,20 @@ select {
      margin-top: 15px;
      text-align: right;
 }
+
 .fitness-content-description button:hover {
      background: rgb(230, 83, 60);
      color: rgb(255, 255, 255);
      font-weight: 600;
 }
 
-.facilities-container{
+.facilities-container {
      margin-top: 60px;
      display: grid;
      grid-template-columns: repeat(3, 1fr);
      gap: 25px;
 }
+
 /* Meet our team section styles */
 .meet-section {
      max-width: 1250px;
@@ -686,4 +727,158 @@ footer hr {
      font-size: 1.12rem;
      font-weight: 400;
      text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+     main {
+          padding: 0 30px;
+     }
+
+     /* section{
+          margin-top: 50px;
+     } */
+     .h3-title {
+          font-size: 2.2rem;
+     }
+
+     /* header responsive styles */
+     header {
+          background: linear-gradient(180.00deg, rgb(25, 25, 25), rgba(119, 119, 119, 0) 100%);
+     }
+
+     .header-side {
+          max-width: 556px;
+          padding: 0px 30px;
+
+     }
+
+     .navigation ul {
+          display: none;
+     }
+
+     .navigation i {
+          display: block;
+          color: white;
+          font-size: 28px;
+     }
+
+     .banner-container {
+          display: grid;
+          grid-template-columns: 1fr;
+     }
+
+     .banner-content {
+          padding-right: 70px;
+     }
+
+     .banner-title {
+          margin-top: 0px;
+     }
+
+     .navigation-title,
+     .banner-title-part1,
+     .banner-title-part2,
+     .banner-title-part3 {
+          font-size: 3.25rem;
+     }
+
+     .banner-title-shape {
+          font-size: 6.75rem;
+     }
+
+     .banner-image img {
+          width: 450px;
+     }
+
+     .banner-image {
+          padding-left: 20px;
+     }
+
+     .banner-card-two {
+          top: 70px;
+          left: 270px;
+     }
+
+     .banner-card-one-container {
+          top: 360px;
+          left: 50px;
+     }
+
+     /* main responsive styles */
+     /* change you habits styles */
+     .change-container,
+     .run-container {
+          margin-top: 50px;
+     }
+
+     .change-image-container {
+          /* display: grid; */
+          grid-template-columns: 1fr;
+          /* gap: 40px;
+          text-align: center; */
+          width: 300px;
+          margin: 0 auto;
+     }
+
+     /* run section styles */
+     .run-container {
+          grid-template-columns: 1fr;
+          gap: 0px;
+     }
+
+     .run-content {
+          margin: 25px;
+          padding-right: 0px;
+     }
+
+     .run-btn {
+          width: 100%;
+          padding: 20px 0;
+     }
+
+     /* training section styles */
+     .training-intro {
+          margin-top: 50px;
+          padding-right: 70px;
+     }
+
+     .training-row-1,
+     .training-row-2 {
+          display: none;
+     }
+
+     .training-row-3 {
+          display: block;
+     }
+
+     .training-row-3-part1 {
+          display: grid;
+          grid-template-columns: 1.1fr 0.9fr;
+     }
+
+     .training-row-3-part2 {
+          display: grid;
+          grid-template-columns: 0.9fr 1.1fr;
+     }
+
+     .training-content-1,
+     .training-content-2,
+     .training-content-4,
+     .training-content-5 {
+          height: 180px;
+     }
+
+     .training-content-1-title{
+          top: 120px;
+          left: 20px;
+     }
+     .training-content-2-title{
+          top: 20px;
+          left: 20px;
+     }
+     .training-content-4-title,
+     .training-content-5-title{
+          top: 140px;
+          left: 20px;
+     }
 }
