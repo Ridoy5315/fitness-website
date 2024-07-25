@@ -292,7 +292,106 @@ header {
      max-width: 100%;
      border-radius: 18px;
 }
-
+/* Training and Exercise section styles */
+.training{
+     max-width: 1250px;
+     margin: 0 auto;
+}
+.training-intro{
+     margin-top: 90px;
+     max-width: 800px;
+     margin-bottom: 50px;
+}
+.training-title{
+     margin: 0;
+     margin-bottom: 20px;
+}
+.training-content-1{
+     background-image: url(../images/exercise1.jpg);
+     position: relative;
+}
+.training-content-1-overlay{
+     background-color: rgba(6, 255, 210, 0.5);
+     height: 100%;
+}
+.training-content-1-title,
+.training-content-5-title,
+.training-content-6-title{
+     size: 1rem;
+     position: absolute;
+     top: 200px;
+     left: 20px;
+}
+.training-content-2{
+     background-image: url(../images/exercise2.png);
+}
+.training-content-2-overlay{
+     background-color: rgba(255, 0, 0, 0.3);
+     height: 100%;
+}
+.training-content-2-title{
+     size: 1rem;
+     position: absolute;
+     top: 30px;
+     left: 30px;
+}
+.training-content-3{
+     background-image: url(../images/exercise3.png);
+}
+.training-content-3-overlay,
+.training-content-3-overlay{
+     background-color: rgba(0, 0, 0, 0.5);
+     height: 100%;
+}
+.training-content-3-title{
+     size: 1rem;
+     position: absolute;
+     top: 180px;
+     left: 20px;
+}
+.training-content-4{
+     background-image: url(../images/exercise4.png);
+}
+.training-content-4-title{
+     size: 1rem;
+     position: absolute;
+     top: 30px;
+     left: 310px;
+}
+.training-content-5{
+     background-image: url(../images/exercise5.jpg);
+}
+.training-content-5-overlay{
+     background-color: rgba(66, 255, 0, 0.3);
+     height: 100%;
+}
+.training-content-6{
+     background-image: url(../images/exercise6.jpg);
+}
+.training-content-6-overlay{
+     background-color: rgba(0, 71, 255, 0.3);
+     height: 100%;
+}
+.training-content-1,
+.training-content-2,
+.training-content-3,
+.training-content-4,
+.training-content-5,
+.training-content-6{
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     height: 250px;
+     position: relative;
+}
+.training-row-1{
+     display: grid;
+     grid-template-columns: 0.7fr 1.4fr 0.7fr ;
+}
+.training-row-2{
+     display: grid;
+     grid-template-columns: 0.8fr 0.6fr 0.6fr ;
+}
 /* BMI Calculator section styles */
 .calculator-intro {
      max-width: 600px;
