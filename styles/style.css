@@ -426,6 +426,7 @@ header {
 }
 
 /* BMI Calculator section styles */
+
 .calculator-intro {
      max-width: 600px;
      margin: 100px auto 70px;
@@ -604,7 +605,9 @@ select {
 .image-3-title,
 .image-4-title,
 .image-5-title,
-.image-6-title {
+.image-6-title,
+.image-3-title-2,
+.image-5-title-2 {
      position: absolute;
      bottom: 35px;
 }
@@ -657,7 +660,9 @@ select {
      position: relative;
      padding-left: 20px;
 }
-
+.image-3-title-2, .image-5-title-2{
+     display: none;
+}
 /* footer styles */
 footer {
      margin-top: 90px;
@@ -688,10 +693,6 @@ footer {
      grid-template-columns: repeat(2, 1fr);
      gap: 120px;
 }
-
-/* .footer-menu-1{
-     display: flex;
-} */
 .footer-menu-1-title {
      color: rgb(255, 255, 255);
      font-size: 2rem;
@@ -730,9 +731,9 @@ footer hr {
 }
 
 @media screen and (max-width: 576px) {
-     main {
+     /* main {
           padding: 0 30px;
-     }
+     } */
 
      /* section{
           margin-top: 50px;
@@ -763,16 +764,17 @@ footer hr {
      }
 
      .banner-container {
-          display: grid;
           grid-template-columns: 1fr;
+          gap: 60px;
      }
 
      .banner-content {
-          padding-right: 70px;
+          padding-right: 0px;
      }
 
-     .banner-title {
+     .banner-title, .banner-description {
           margin-top: 0px;
+          padding-right: 70px;
      }
 
      .navigation-title,
@@ -787,35 +789,36 @@ footer hr {
      }
 
      .banner-image img {
-          width: 450px;
+          width: 420px;
      }
 
      .banner-image {
-          padding-left: 20px;
+          padding-left: 10px;
      }
 
      .banner-card-two {
           top: 70px;
-          left: 270px;
+          left: 240px;
      }
 
      .banner-card-one-container {
           top: 360px;
-          left: 50px;
+          left: 20px;
      }
-
+     .banner-button{
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          padding-right: 0px;
+     }
      /* main responsive styles */
      /* change you habits styles */
      .change-container,
      .run-container {
-          margin-top: 50px;
+          margin: 50px 30px 0px;
      }
 
      .change-image-container {
-          /* display: grid; */
           grid-template-columns: 1fr;
-          /* gap: 40px;
-          text-align: center; */
           width: 300px;
           margin: 0 auto;
      }
@@ -837,6 +840,10 @@ footer hr {
      }
 
      /* training section styles */
+     .training {
+          margin: 0 30px;
+     }
+
      .training-intro {
           margin-top: 50px;
           padding-right: 70px;
@@ -868,17 +875,100 @@ footer hr {
           height: 180px;
      }
 
-     .training-content-1-title{
+     .training-content-1-title {
           top: 120px;
           left: 20px;
      }
-     .training-content-2-title{
+
+     .training-content-2-title {
           top: 20px;
           left: 20px;
      }
+
      .training-content-4-title,
-     .training-content-5-title{
+     .training-content-5-title {
           top: 140px;
           left: 20px;
+     }
+
+     /* BMI Calculator section */
+     .calculator-intro {
+          margin: 50px 30px 40px;
+          padding-right: 40px;
+     }
+
+     .calculator-content {
+          grid-template-columns: 1.1fr;
+          padding: 0 30px;
+
+     }
+     th,
+     td {
+          padding: 20px;
+     }
+
+     th {
+          font-size: 1.3rem;
+     }
+
+     td {
+          font-size: 1.1rem;
+     }
+     .form-btn {
+          width: 60%;
+     }
+     /* facilities section styles */
+     .facilities-section{
+          margin-top: 50px;
+          padding: 0 30px;
+     }
+     .facilities-intro{
+          max-width: 400px;
+     }
+     .facilities-container {
+          margin-top: 40px;
+          grid-template-columns: 1fr;
+          gap: 10px;
+     }
+
+     /* meet our team section styles */
+     .meet-section {
+          margin: 0 30px;
+          margin-top: 50px;
+     }
+     .meet-image-container {
+          grid-template-columns: 1fr;
+          margin-top: 50px;
+     }
+     .image-1-content, .image-4-content{
+          display: none;
+     }
+     .image-3-content {
+          background-image: url(../images/trainer5.png);
+     }     
+     .image-5-content {
+          background-image: url(../images/trainer3.png);
+     }
+     .image-3-title-2, .image-5-title-2{
+          display: block;
+     }
+     .image-3-title, .image-5-title{
+          display: none;
+     }
+
+     /* footer styles */
+     footer {
+          margin-top: 50px;
+     }
+     .footer-content, .footer-menu {
+          grid-template-columns: 1fr;
+          gap: 0px;
+     }
+     .footer-content{
+          padding: 0px 110px 0px 30px;
+     }
+     footer hr {
+          max-width: 90%;
+          margin: 50px auto 25px;
      }
 }
