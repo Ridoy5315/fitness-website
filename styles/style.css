@@ -218,7 +218,12 @@ header {
      font-size: 2rem;
      font-weight: 900;
 }
-
+.banner-card-one-design i{
+     font-size: 21px;
+     padding-left: 14px;
+     padding-top: 10px;
+     display: none;
+}
 /* Main part styles start */
 /* Change your habits section styles */
 .change-container {
@@ -804,6 +809,9 @@ footer hr {
      .banner-card-one-container {
           top: 360px;
           left: 20px;
+     }
+     .banner-card-one-design i{
+          display: block;
      }
      .banner-button{
           display: grid;
