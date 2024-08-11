@@ -887,9 +887,11 @@ footer hr {
      /* training section styles */
      .training-intro {
           margin-top: 50px;
-          padding-right: 70px;
+          padding-right: 50px;
      }
-
+     .training-intro p {
+          text-align: justify;
+     }
      .training-row-1,
      .training-row-2 {
           display: none;
@@ -935,9 +937,11 @@ footer hr {
      /* BMI Calculator section */
      .calculator-intro {
           margin: 50px 30px 40px;
-          padding-right: 40px;
+          padding-right: 50px;
      }
-
+     .calculator-intro p {
+          text-align: justify;
+     }
      .calculator-content {
           grid-template-columns: 1fr;
           gap: 10px;
