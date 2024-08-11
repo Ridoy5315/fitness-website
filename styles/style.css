@@ -4,7 +4,7 @@
 body {
      background: rgb(0, 0, 0);
      font-family: "Inter", sans-serif;
-     margin: 0;
+ margin: 0;
      padding: 0;
 }
 
@@ -506,7 +506,9 @@ select {
      font-size: 1rem;
      font-weight: 400;
 }
-
+select{
+     border-right: 16px solid transparent;
+}
 /* Our facilities styles */
 .facilities-section {
      margin-top: 100px;
@@ -757,7 +759,10 @@ footer hr {
      .h3-title {
           font-size: 2.2rem;
      }
-
+     .button-style {
+          font-size: 1rem;
+          padding: 12px 20px;
+     }
      /* header responsive styles */
      header {
           background: linear-gradient(180.00deg, rgb(25, 25, 25), rgba(119, 119, 119, 0) 100%);
@@ -765,8 +770,6 @@ footer hr {
 
      .header-side {
           max-width: 90%;
-          padding: 0px 30px;
-
      }
 
      .navigation ul {
@@ -797,15 +800,15 @@ footer hr {
      .banner-title-part1,
      .banner-title-part2,
      .banner-title-part3 {
-          font-size: 3.25rem;
+          font-size: 3rem;
      }
 
      .banner-title-shape {
-          font-size: 6.75rem;
+          font-size: 6rem;
      }
 
      .banner-image img {
-          width: 420px;
+          width: 100%;
      }
 
      .banner-image {
@@ -814,12 +817,33 @@ footer hr {
 
      .banner-card-two {
           top: 70px;
-          left: 240px;
+          left: 210px;
      }
 
      .banner-card-one-container {
-          top: 360px;
+          top: 285px;
           left: 20px;
+     }
+     .banner-card-two,
+     .banner-card-one-container {
+          font-size: 0.7rem;
+          font-weight: 400;
+          width: 125px;
+     }
+     .banner-card-one-design {
+          width: 40px;
+          height: 40px;
+     }
+
+     .banner-card-one-350 {
+          font-size: 1.2rem;
+     }
+
+     .banner-card-two-500 {
+          font-size: 1.9rem;
+     }
+     .banner-card-one-design i{
+          font-size: 1.2rem;
      }
      .banner-card-one-design i{
           display: block;
@@ -827,7 +851,7 @@ footer hr {
      .banner-button{
           display: grid;
           grid-template-columns: 1fr 1fr;
-          padding-right: 0px;
+          max-width: 100%;
      }
      /* main responsive styles */
      /* change you habits styles */
@@ -904,7 +928,7 @@ footer hr {
 
      .training-content-4-title,
      .training-content-5-title {
-          top: 140px;
+          top: 120px;
           left: 20px;
      }
 
@@ -915,26 +939,37 @@ footer hr {
      }
 
      .calculator-content {
-          grid-template-columns: 1.1fr;
-          padding: 0 30px;
-
+          grid-template-columns: 1fr;
+          gap: 10px;
      }
      th,
      td {
-          padding: 20px;
+          padding: 14px;
      }
 
      th {
-          font-size: 1.3rem;
+          font-size: 1.1rem;
      }
 
      td {
-          font-size: 1.1rem;
+          font-size: 1rem;
      }
      .form-btn {
           width: 60%;
      }
-     /* facilities section styles */
+     .form-first-part {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 10px;
+     }
+     .form-row-3{
+          margin-top: 10px;
+     }
+     input,
+     select {
+          padding: 10px;
+          padding-right: 0px;
+     }
      .facilities-section{
           max-width: 90%;
           margin-top: 50px;
@@ -1000,5 +1035,26 @@ footer hr {
      footer hr {
           max-width: 100%;
           margin: 50px auto 25px;
+     }
+     .banner-card-two,
+     .banner-card-one-container {
+     font-size: 0.7rem;
+     font-weight: 400;
+     width: 125px;
+     }
+     .banner-card-one-design {
+     width: 40px;
+     height: 40px;
+     }
+
+     .banner-card-one-350 {
+     font-size: 1.2rem;
+     }
+
+     .banner-card-two-500 {
+     font-size: 1.9rem;
+     }
+     .banner-card-one-design i{
+      font-size: 1.2rem;
      }
 }
