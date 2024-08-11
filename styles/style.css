@@ -58,7 +58,7 @@ header {
 }
 
 .header-side {
-     max-width: 1250px;
+     max-width: 85%;
      margin: 0 auto;
 }
 
@@ -227,7 +227,7 @@ header {
 /* Main part styles start */
 /* Change your habits section styles */
 .change-container {
-     max-width: 1250px;
+     max-width: 85%;
      margin: 0 auto;
      margin-top: 100px;
 }
@@ -272,7 +272,7 @@ header {
 
 /* run and extra mile easily section styles */
 .run-container {
-     max-width: 1250px;
+     max-width: 85%;
      margin: 0 auto;
      margin-top: 100px;
      border-radius: 18px;
@@ -307,7 +307,7 @@ header {
 
 /* Training and Exercise section styles */
 .training {
-     max-width: 1250px;
+     max-width: 85%;
      margin: 0 auto;
 }
 
@@ -447,7 +447,7 @@ header {
 }
 
 .calculator-content {
-     max-width: 1250px;
+     max-width: 85%;
      margin: 0 auto;
      display: grid;
      grid-template-columns: 0.9fr 1.1fr;
@@ -510,7 +510,7 @@ select {
 /* Our facilities styles */
 .facilities-section {
      margin-top: 100px;
-     max-width: 1250px;
+     max-width: 85%;
      margin: 90px auto 0px;
 }
 
@@ -525,20 +525,36 @@ select {
      margin-bottom: 20px;
 }
 
-.facilities-content {
+.facilities-content-one,
+.facilities-content-two,
+.facilities-content-three,
+.facilities-content-four,
+.facilities-content-five,
+.facilities-content-six {
      border-radius: 20px;
      background: rgb(34, 34, 34);
      padding: 20px;
 }
 
-.facilities-content img {
+.facilities-content-one img,
+.facilities-content-two img,
+.facilities-content-three img,
+.facilities-content-four img,
+.facilities-content-five img,
+.facilities-content-six img {
      width: 100%;
+     height: 300px;
      border-radius: 15px;
      margin-bottom: 15px;
      min-height: 250px;
 }
 
-.facilities-content h5 {
+.facilities-content-one h5,
+.facilities-content-two h5,
+.facilities-content-three h5,
+.facilities-content-four h5,
+.facilities-content-five h5,
+.facilities-content-six h5 {
      margin: 10px 0px 20px;
      font-size: 1.25rem;
      color: rgb(255, 255, 255);
@@ -576,10 +592,12 @@ select {
      grid-template-columns: repeat(3, 1fr);
      gap: 25px;
 }
-
+.facilities-btn{
+     display: none;
+}
 /* Meet our team section styles */
 .meet-section {
-     max-width: 1250px;
+     max-width: 85%;
      margin: 0 auto;
      margin-top: 100px;
 }
@@ -676,7 +694,7 @@ footer {
 }
 
 .footer-container {
-     max-width: 1250px;
+     max-width: 85%;
      margin: 0 auto;
 }
 
@@ -723,7 +741,7 @@ footer li a {
 }
 
 footer hr {
-     max-width: 1250px;
+     max-width: 100%;
      margin: 70px auto 35px;
      border: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -736,13 +754,6 @@ footer hr {
 }
 
 @media screen and (max-width: 576px) {
-     /* main {
-          padding: 0 30px;
-     } */
-
-     /* section{
-          margin-top: 50px;
-     } */
      .h3-title {
           font-size: 2.2rem;
      }
@@ -753,7 +764,7 @@ footer hr {
      }
 
      .header-side {
-          max-width: 556px;
+          max-width: 90%;
           padding: 0px 30px;
 
      }
@@ -821,7 +832,9 @@ footer hr {
      /* main responsive styles */
      /* change you habits styles */
      .change-container,
-     .run-container {
+     .run-container,
+     .training {
+          max-width: 90%;
           margin: 50px 30px 0px;
      }
 
@@ -848,10 +861,6 @@ footer hr {
      }
 
      /* training section styles */
-     .training {
-          margin: 0 30px;
-     }
-
      .training-intro {
           margin-top: 50px;
           padding-right: 70px;
@@ -927,21 +936,33 @@ footer hr {
      }
      /* facilities section styles */
      .facilities-section{
+          max-width: 90%;
           margin-top: 50px;
-          padding: 0 30px;
      }
-     .facilities-intro{
-          max-width: 400px;
+     .facilities-intro {
+          max-width: 100%;
+          text-align: justify;
+          margin-right: 60px;
      }
      .facilities-container {
           margin-top: 40px;
           grid-template-columns: 1fr;
           gap: 10px;
      }
-
+     .facilities-content-three,
+     .facilities-content-four,
+     .facilities-content-five,
+     .facilities-content-six {
+          display: none;
+     }
+     .facilities-btn {
+          display: block;
+          width: 100%;
+          margin-top: 10px;
+     }
      /* meet our team section styles */
      .meet-section {
-          margin: 0 30px;
+          max-width: 90%;
           margin-top: 50px;
      }
      .meet-image-container {
@@ -973,10 +994,11 @@ footer hr {
           gap: 0px;
      }
      .footer-content{
-          padding: 0px 110px 0px 30px;
+          max-width: 90%;
+          text-align: justify;
      }
      footer hr {
-          max-width: 90%;
+          max-width: 100%;
           margin: 50px auto 25px;
      }
 }
